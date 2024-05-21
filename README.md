@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bailout
 
-## Getting Started
+The Voice AI app that comes to your rescue when you need a clever escape from any situation! This lighthearted project showcases the incredible potential of advanced language models and voice synthesis by generating custom-made, entertaining excuses to help you gracefully exit from any circumstance you'd rather not be in
 
-First, run the development server:
+## Usage
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Send a message to Bailout with the excuse you want, and Bailout will call you with a custom-made excuse to help you escape.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Try it on the web app, or get a Twilio number and get a call back from Bailout!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Keep your message short for the best results!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How it works
 
-## Learn More
+1. The web app receives a short message from the user, through the web UI or text message, and uses Groq's API to turn it to a system message for a VAPI assistant.
 
-To learn more about Next.js, take a look at the following resources:
+2. Then the VAPI assistant calls the user back with a compelling excuse to help them escape the situation they're in.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Profit!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+|                           |                               |                            |
+| ------------------------- |-------------------------------|----------------------------|
+| ![Image1](images/sms.png) | ![Image2](images/calling.png) | ![Image3](images/talk.png) |
 
-## Deploy on Vercel
+## Acknowledgements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thanks for https://vapi.ai/ and partners for their amazing services and for the inspiration for this project!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+This project is my submission for the [VAPI hackathon](https://lu.ma/vapithon?tk=Fs7FgS).

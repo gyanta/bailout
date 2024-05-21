@@ -6,21 +6,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "orval": "orval generate --config ./orval.config.ts"
   },
   "dependencies": {
+    "@radix-ui/themes": "^3.0.5",
+    "@vapi-ai/web": "^1.1.5",
+    "@vercel/analytics": "^1.2.2",
+    "groq-sdk": "^0.3.3",
+    "lucide-react": "^0.379.0",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "twilio": "^5.0.4"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "orval": "^6.29.1",
+    "postcss": "^8",
+    "prettier": "3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "typescript-eslint": "^7.10.0"
   }
 }
